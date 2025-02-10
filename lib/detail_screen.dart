@@ -11,10 +11,16 @@ class DetailScreen extends StatelessWidget {
   Future<void> _openMap() async {
     final url =
         'https://www.google.com/maps/search/?api=1&query=${place.lat},${place.lng}';
-    if (await canLaunchUrl(Uri.parse(url))) {
-      await launchUrl(Uri.parse(url));
+
+    // Ensure we can launch the URL
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      // Show error if URL can't be launched
+      throw 'Could not open the map.';
     }
   }
+
 
   Future<void> _callNumber(String number) async {
     final url = 'tel:$number';
