@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:dinajpur_tourist_app/registration_page.dart';  // Import the RegistrationPage
 import 'package:google_fonts/google_fonts.dart';
+import 'package:dinajpur_tourist_app/database_helper.dart'; // Import the DatabaseHelper
+import 'home_screen.dart'; // Import HomeScreen
 
 class LoginPage extends StatefulWidget {
+  final VoidCallback toggleDarkMode;
+
+  LoginPage({required this.toggleDarkMode});
+
   @override
   _LoginPageState createState() => _LoginPageState();
 }
@@ -10,13 +17,30 @@ class _LoginPageState extends State<LoginPage> {
   final _formKey = GlobalKey<FormState>();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  bool _obscurePassword = true; // Track password visibility
+  bool _obscurePassword = true;
 
   // Handle form submission
-  void _login() {
+  void _login() async {
     if (_formKey.currentState!.validate()) {
-      // Proceed with login (this can be your authentication process)
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Logging in')));
+      String email = _emailController.text;
+      String password = _passwordController.text;
+
+      // Check if user exists in the database
+      User? user = await DatabaseHelper.instance.getUser(email, password);
+
+      if (user != null) {
+        // Successfully logged in, navigate to HomePage
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Login successful')));
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) => HomeScreen(toggleDarkMode: widget.toggleDarkMode),
+          ),
+        );
+      } else {
+        // Invalid credentials
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Invalid email or password')));
+      }
     }
   }
 
@@ -35,7 +59,6 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Logo or App Name (optional)
             Text(
               'Welcome Back!',
               style: GoogleFonts.poppins(
@@ -45,12 +68,10 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
             SizedBox(height: 20),
-            // Form for Email and Password
             Form(
               key: _formKey,
               child: Column(
                 children: [
-                  // Email TextField
                   TextFormField(
                     controller: _emailController,
                     decoration: InputDecoration(
@@ -73,7 +94,6 @@ class _LoginPageState extends State<LoginPage> {
                     },
                   ),
                   SizedBox(height: 20),
-                  // Password TextField with visibility toggle
                   TextFormField(
                     controller: _passwordController,
                     obscureText: _obscurePassword,
@@ -108,35 +128,45 @@ class _LoginPageState extends State<LoginPage> {
                     },
                   ),
                   SizedBox(height: 30),
-                  // Login Button
-                  ElevatedButton(
-                    onPressed: _login,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.deepPurpleAccent,
-                      padding: EdgeInsets.symmetric(vertical: 15, horizontal: 40),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
+                  Container(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: _login,
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepPurpleAccent,
+                        padding: EdgeInsets.symmetric(vertical: 15, horizontal: 40),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30),
+                        ),
                       ),
-                    ),
-                    child: Text(
-                      'Login',
-                      style: GoogleFonts.poppins(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
+                      child: Text(
+                        'Login',
+                        style: GoogleFonts.poppins(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ),
                   SizedBox(height: 20),
-                  // Forgot Password Link
-                  TextButton(
-                    onPressed: () {
-                      // Navigate to forgot password page (if exists)
-                    },
-                    child: Text(
-                      'Forgot Password?',
-                      style: TextStyle(color: Colors.white),
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text("I don't have an account.", style: TextStyle(color: Colors.white)),
+                      TextButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => RegistrationPage()),
+                          );
+                        },
+                        child: Text(
+                          "Registration?",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),

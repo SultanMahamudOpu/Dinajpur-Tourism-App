@@ -1,7 +1,6 @@
-import 'package:dinajpur_tourist_app/login_page.dart';
 import 'package:flutter/material.dart';
+import 'package:dinajpur_tourist_app/login_page.dart';
 import 'app_styles.dart';
-import 'home_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,11 +27,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       title: 'Dinajpur Tourism',
       theme: _isDarkMode ? AppStyles.darkTheme : AppStyles.lightTheme,
-      home:
-      HomeScreen(
-        toggleDarkMode: toggleDarkMode,  // Pass the function here
-      ),
-      // LoginPage(),
+      home: LoginPage(toggleDarkMode: toggleDarkMode), // Pass the toggleDarkMode function to LoginPage
     );
   }
 }
