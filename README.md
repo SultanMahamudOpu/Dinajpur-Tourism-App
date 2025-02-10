@@ -26,4 +26,4 @@ To get started with the project, you need to clone the repository and run the ap
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/dinajpur_tourist_app.git
+   git clone https://github.com/SultanMahamudOpu/Dinajpur-Tourism-App.git
