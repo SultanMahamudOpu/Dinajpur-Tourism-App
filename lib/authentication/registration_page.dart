@@ -1,5 +1,5 @@
+import 'package:dinajpur_tourist_app/supabase/supabase_helper.dart';
 import 'package:flutter/material.dart';
-import 'package:dinajpur_tourist_app/database_helper.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 
@@ -43,20 +43,18 @@ class _RegistrationPageState extends State<RegistrationPage> {
   // Handle form submission
   void _register() async {
     if (_formKey.currentState!.validate()) {
-      final user = User(
-        name: _nameController.text,
-        email: _emailController.text,
-        password: _passwordController.text,
-        age: _ageController.text,
-        dob: _dobController.text,
-      );
+      String email = _emailController.text;
+      String password = _passwordController.text;
 
-      // Insert user into the database
-      await DatabaseHelper.instance.insertUser(user);
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Registration successful')));
+      // Call Supabase signUp method
+      String? error = await SupabaseHelper.signUp(email, password);
 
-      // Go back to the login page after successful registration
-      Navigator.pop(context);  // This pops the registration page and returns to the login page
+      if (error == null) {
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Registration successful')));
+        Navigator.pop(context); // Go back to login page
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Error: $error')));
+      }
     }
   }
 

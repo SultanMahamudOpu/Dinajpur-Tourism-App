@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'place_model.dart';
+import '../place/place_model.dart';
 import 'detail_screen.dart';
-import 'app_styles.dart';
+import '../style/app_styles.dart';
 
 class HomeScreen extends StatefulWidget {
   final VoidCallback toggleDarkMode;  // Accept the toggleDarkMode function

@@ -1,8 +1,8 @@
+import 'package:dinajpur_tourist_app/supabase/supabase_helper.dart';
 import 'package:flutter/material.dart';
-import 'package:dinajpur_tourist_app/registration_page.dart';  // Import the RegistrationPage
+import 'package:dinajpur_tourist_app/authentication/registration_page.dart';  // Import the RegistrationPage
 import 'package:google_fonts/google_fonts.dart';
-import 'package:dinajpur_tourist_app/database_helper.dart'; // Import the DatabaseHelper
-import 'home_screen.dart'; // Import HomeScreen
+import '../screens/home_screen.dart'; // Import HomeScreen
 
 class LoginPage extends StatefulWidget {
   final VoidCallback toggleDarkMode;
@@ -25,21 +25,27 @@ class _LoginPageState extends State<LoginPage> {
       String email = _emailController.text;
       String password = _passwordController.text;
 
-      // Check if user exists in the database
-      User? user = await DatabaseHelper.instance.getUser(email, password);
+      // Call Supabase signIn method
+      String? error = await SupabaseHelper.signIn(email, password);
 
-      if (user != null) {
-        // Successfully logged in, navigate to HomePage
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Login successful')));
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-            builder: (context) => HomeScreen(toggleDarkMode: widget.toggleDarkMode),
-          ),
-        );
+      if (error == null) {
+        // Check if user is successfully authenticated
+        final currentUser = SupabaseHelper.getCurrentUser();
+
+        if (currentUser != null) {
+          // Successfully logged in
+          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Login successful')));
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => HomeScreen(toggleDarkMode: widget.toggleDarkMode)),
+          );
+        } else {
+          // If the user is null, authentication failed
+          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Authentication failed')));
+        }
       } else {
-        // Invalid credentials
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Invalid email or password')));
+        // Invalid credentials or error during login
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Error: $error')));
       }
     }
   }

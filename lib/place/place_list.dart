@@ -1,4 +1,4 @@
-import 'package:dinajpur_tourist_app/place_model.dart';
+import 'package:dinajpur_tourist_app/place/place_model.dart';
 
 final List<Place> _places = [
   Place(

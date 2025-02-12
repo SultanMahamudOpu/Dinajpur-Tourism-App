@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'place_model.dart';
-import 'app_styles.dart';
+import '../place/place_model.dart';
+import '../style/app_styles.dart';
 
 class DetailScreen extends StatelessWidget {
   final Place place;
