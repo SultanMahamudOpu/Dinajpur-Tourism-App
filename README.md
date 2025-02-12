@@ -1,4 +1,4 @@
-# **Software Requirements Specification (SRS)** for Dinajpur Tourism App
+# Dinajpur Tourism App
 
 ## **1. Introduction**
 
