@@ -19,9 +19,9 @@ class _HomeScreenState extends State<HomeScreen> {
     // Hardcoded list of places (same as before)
     Place(
       id: 0,
-      name: 'HSTU',
+      name: 'হাজী মোহাম্মদ দানেশ বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়',
       description:
-      'Hajee Mohammad Danesh Science & Technology University (HSTU) is a public university in Dinajpur, Bangladesh. Established in 1999, it is the first science and technology university in northern Bangladesh. HSTU offers undergraduate and postgraduate programs in engineering, agriculture, business, and applied sciences. Known for its research and academic excellence, the university plays a key role in advancing education and technology in the region.',
+      'হাজী মোহাম্মদ দানেশ বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (HSTU) বাংলাদেশের একটি অন্যতম প্রযুক্তি ও বিজ্ঞানভিত্তিক উচ্চশিক্ষা প্রতিষ্ঠান। এটি দিনাজপুর জেলায় অবস্থিত এবং দেশের প্রথম কৃষিভিত্তিক প্রযুক্তি বিশ্ববিদ্যালয় হিসেবে পরিচিত। হাজী মোহাম্মদ দানেশ বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ১৯৭৯ সালে একটি কৃষি কলেজ হিসেবে যাত্রা শুরু করে। পরে ১৯৯৯ সালে এটি পূর্ণাঙ্গ বিশ্ববিদ্যালয়ে রূপান্তরিত হয়। বিশ্ববিদ্যালয়টির নামকরণ করা হয়েছে বিশিষ্ট রাজনীতিবিদ ও সমাজসেবক হাজী মোহাম্মদ দানেশের নামে, যিনি বাংলাদেশের স্বাধিকার আন্দোলনে গুরুত্বপূর্ণ ভূমিকা পালন করেছেন।HSTU বিভিন্ন অনুষদ ও বিভাগসমূহের মাধ্যমে কৃষি, প্রকৌশল, প্রযুক্তি, ব্যবসা প্রশাসন, প্রাণিসম্পদ, মাৎস্যবিজ্ঞান, ভেটেরিনারি সাইন্সসহ বিভিন্ন ক্ষেত্রে স্নাতক ও স্নাতকোত্তর পর্যায়ে শিক্ষা প্রদান করে।',
       image: 'images/hstu.jpg',
       lat: 25.6952,
       lng: 88.6520,
@@ -30,9 +30,9 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     Place(
       id: 1,
-      name: 'Kantaji Temple',
+      name: 'কান্তজিউ মন্দির',
       description:
-      'Kantaji Temple, also known as Kantanagar Temple, is a stunning 18th-century Hindu temple located in Dinajpur, Bangladesh. Built by Maharaja Pran Nath in 1752, it is famous for its exquisite terracotta artwork depicting scenes from Hindu epics like the Ramayana and Mahabharata. The temple, dedicated to Lord Krishna, originally had a nine-tiered tower, which was damaged by an earthquake in the 19th century. Despite this, it remains one of the finest examples of Bengal’s temple architecture, attracting visitors for its intricate designs and historical significance.',
+      'কান্তজিউ মন্দির বাংলাদেশের দিনাজপুর জেলায় অবস্থিত একটি ঐতিহাসিক হিন্দু মন্দির, যা ১৭৫২ সালে রাজা রামনাথ নির্মাণ করেন। এটি ভগবান কৃষ্ণকে উৎসর্গকৃত এবং বাংলাদেশের অন্যতম সুন্দর টেরাকোটা স্থাপত্যের নিদর্শন। মন্দিরের গায়ে রামায়ণ, মহাভারত ও সামাজিক জীবনের নানা দৃশ্য খোদাই করা আছে। একসময় এটি নব-রত্ন (নয়টি চূড়া) বিশিষ্ট ছিল, তবে ১৮৯৭ সালের ভূমিকম্পে এর উপরের অংশ ধ্বংস হয়ে যায়। প্রতি বছর এখানে রাস উৎসব অনুষ্ঠিত হয়, যা বহু ভক্ত ও পর্যটকদের আকর্ষণ করে। বর্তমানে এটি প্রত্নতত্ত্ব অধিদপ্তরের সংরক্ষিত ঐতিহ্যবাহী স্থাপনা।',
       image: 'images/kantaji_temple.jpg',
       lat: 25.7904,
       lng: 88.6667,
@@ -41,9 +41,9 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     Place(
       id: 2,
-      name: 'Nayabad Mosque',
+      name: 'নয়াবাদ মসজিদ',
       description:
-      'Nayabad Mosque is an 18th-century mosque located in Nayabad village, near Kantaji Temple in Dinajpur, Bangladesh. Built in 1793 during the reign of Mughal Emperor Shah Alam II, it is believed to have been constructed by Muslim artisans who worked on the nearby Kantaji Temple. The mosque features three domes, four corner towers, and intricate terracotta decorations. Surrounded by scenic landscapes, Nayabad Mosque is a significant historical and architectural site, reflecting the rich cultural heritage of the region.',
+      'নয়াবাদ মসজিদ বাংলাদেশের দিনাজপুর জেলায় অবস্থিত একটি ঐতিহাসিক মসজিদ, যা ১৭৯৩ সালে নির্মিত হয় বলে ধারণা করা হয়। এটি দিনাজপুর রাজবাড়ির কাছাকাছি পুনর্ভবা নদীর তীরে অবস্থিত। মসজিদটি মুঘল স্থাপত্যশৈলীতে নির্মিত এবং এর তিনটি গম্বুজ ও কারুকার্যখচিত দেয়াল রয়েছে। ধারণা করা হয়, এটি তখনকার স্থাপত্যশিল্পীদের জন্য নির্মিত হয়েছিল, যারা দিনাজপুরের কান্তজিউ মন্দির তৈরিতে কাজ করেছিলেন। বর্তমানে এটি প্রত্নতত্ত্ব অধিদপ্তরের সংরক্ষিত স্থাপনা এবং পর্যটকদের আকর্ষণের একটি গুরুত্বপূর্ণ কেন্দ্র।',
       image: 'images/Nayabad_Mosque.jpg',
       lat: 25.7819,
       lng: 88.6587,
@@ -52,9 +52,9 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     Place(
       id: 3,
-      name: 'Ramsagar National Park',
+      name: 'রামসাগর জাতীয় উদ্যান',
       description:
-      'Ramsagar National Park is a popular tourist destination in Dinajpur, Bangladesh, centered around Ramsagar, the largest man-made lake in the country. The lake was dug during the reign of Raja Ram Nath in the 18th century to provide water for the local people. Surrounded by lush greenery, the park is home to diverse flora and fauna, including various bird species, deer, and monkeys. It is a great spot for picnics, boating, and nature walks, attracting visitors for its scenic beauty and historical significance.',
+      'রামসাগর জাতীয় উদ্যান বাংলাদেশের দিনাজপুর জেলায় অবস্থিত একটি পর্যটনকেন্দ্র ও সংরক্ষিত বনাঞ্চল। এটি মূলত দেশের বৃহত্তম মানবসৃষ্ট জলাশয় রামসাগর দীঘিকে কেন্দ্র করে গড়ে উঠেছে, যা দিনাজপুরের রাজা রামনাথ ১৭৫০ সালের দিকে খনন করেন। উদ্যানটি প্রাকৃতিক সৌন্দর্য, সমৃদ্ধ জীববৈচিত্র্য ও বিভিন্ন বন্যপ্রাণীর আবাসস্থল হিসেবে পরিচিত। এখানে বিভিন্ন প্রজাতির গাছপালা, পাখি ও হরিণসহ নানা বন্যপ্রাণী দেখা যায়। পর্যটকদের জন্য নৌকা ভ্রমণ, পিকনিক স্পট ও অবকাশযাপনের সুবিধা রয়েছে, যা এটিকে দিনাজপুরের অন্যতম আকর্ষণীয় স্থান করে তুলেছে।',
       image: 'images/ramsagar.jpg',
       lat: 25.5517,
       lng: 88.6217,
@@ -63,9 +63,9 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     Place(
       id: 4,
-      name: 'Dinajpur Rajbari',
+      name: 'দিনাজপুর রাজবাড়ী',
       description:
-      'Dinajpur Rajbari is a historic palace located in Dinajpur, Bangladesh. It was the residence of the Dinajpur royal family and showcases a blend of Mughal and European architectural styles. Though now in ruins, the palace complex once featured grand halls, intricate carvings, and beautiful courtyards. Notable structures within the complex include the main palace, temple, and gateways. Despite its dilapidated state, Dinajpur Rajbari remains a significant cultural and historical landmark, attracting visitors interested in Bengal’s royal heritage.',
+      'দিনাজপুর রাজবাড়ী বাংলাদেশের দিনাজপুর জেলায় অবস্থিত একটি ঐতিহাসিক স্থাপনা, যা ১৮ শতকে দিনাজপুরের রাজারা নির্মাণ করেন। এটি ছিল দিনাজপুরের রাজাদের আবাসস্থল ও প্রশাসনিক কেন্দ্র। রাজবাড়িটির স্থাপত্যে মুঘল ও ইউরোপীয় প্রভাব দেখা যায়, যেখানে সুন্দর কারুকাজ ও খিলানযুক্ত প্রবেশদ্বার রয়েছে। বর্তমানে এটি ধ্বংসপ্রায় হলেও এর কিছু অংশ এখনো টিকে আছে এবং প্রত্নতত্ত্ব অধিদপ্তর এটি সংরক্ষণ করছে। দিনাজপুর রাজবাড়ী ঐতিহাসিক ও স্থাপত্যিক গুরুত্বের কারণে পর্যটকদের জন্য অন্যতম আকর্ষণীয় স্থান।',
       image: 'images/rajbari.jpg',
       lat: 25.6459,
       lng: 88.6560,
@@ -74,9 +74,9 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     Place(
       id: 5,
-      name: 'Sukhsagar',
+      name: 'সুখসাগর',
       description:
-      'Sukhsagar is a historic man-made pond located in Dinajpur, Bangladesh. It was excavated by Raja Sukhdev, a local ruler, to provide water for the people. Covering a vast area, Sukhsagar is known for its serene beauty and cultural significance. The pond, surrounded by lush greenery, serves as a popular spot for visitors looking to relax or explore the historical heritage of the region. It is often mentioned alongside other historic water bodies like Ramsagar, highlighting the legacy of ancient water management systems in Bengal.',
+      'সুখসাগর দিনাজপুর জেলার একটি ঐতিহাসিক জলাশয়, যা দিনাজপুরের রাজা সুখদেব রায় ১৮শ শতকে খনন করেন। এটি মূলত কৃষিকাজ ও পানীয় জল সরবরাহের জন্য তৈরি করা হলেও পরবর্তীতে এটি একটি দর্শনীয় স্থান হয়ে ওঠে। সুখসাগরের চারপাশে মনোরম প্রাকৃতিক পরিবেশ ও নানা প্রজাতির গাছপালা রয়েছে, যা পর্যটকদের আকর্ষণ করে। এটি দিনাজপুরের অন্যতম ঐতিহাসিক নিদর্শন এবং স্থানীয় জনগণের কাছে বিনোদন ও অবসর যাপনের একটি জনপ্রিয় স্থান।',
       image: 'images/shuk_shagor.jpg',
       lat: 25.6471,
       lng: 88.6597,
@@ -85,9 +85,9 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     Place(
       id: 6,
-      name: 'Shopnopuri',
+      name: 'স্বপ্নপুরী',
       description:
-      'Shopnopuri is a popular artificial amusement park located in Dinajpur, Bangladesh. It is a beautiful recreational spot featuring scenic landscapes, artificial lakes, rides, and picnic areas. The park offers a variety of attractions, including statues, mini zoos, and boat rides, making it a perfect destination for family outings and leisure activities. Visitors can enjoy the serene environment and entertainment facilities while exploring its well-maintained green spaces.',
+      'স্বপ্নপুরী বাংলাদেশের দিনাজপুর জেলায় অবস্থিত একটি জনপ্রিয় বিনোদনকেন্দ্র ও পর্যটনস্থল। এটি একটি কৃত্রিম পার্ক, যেখানে বিভিন্ন আকর্ষণীয় রাইড, কৃত্রিম জলপ্রপাত, চিড়িয়াখানা, মিনি চিড়িয়াখানা, শিশু পার্ক, বোটিং সুবিধা এবং সুন্দর প্রাকৃতিক পরিবেশ রয়েছে। স্বপ্নপুরী পরিবার ও বন্ধুদের সাথে অবকাশযাপনের জন্য উপযুক্ত স্থান এবং এটি স্থানীয় ও দূরদূরান্তের পর্যটকদের কাছে বেশ জনপ্রিয়।',
       image: 'images/shopnopuri.jpg',
       lat: 25.4296,
       lng: 89.1456,
@@ -96,9 +96,9 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     Place(
       id: 7,
-      name: 'Gore Shahid Minar',
+      name: 'গোর-এ-শহীদ ঈদগাহ ময়দান',
       description:
-      'Gore Shahid Minar is a historical monument located in the city of Mymensingh, Bangladesh. It is dedicated to the memory of those who lost their lives in the language movement of 1952. The monument symbolizes the sacrifices made by the people of Bangladesh in their fight for the recognition of the Bengali language as one of the official languages of the country. The Gore Shahid Minar stands as a tribute to the martyrs and a reminder of the struggle for linguistic and cultural rights. It is an important symbol of national pride and heritage in Bangladesh.',
+      'গোর-এ-শহীদ ঈদগাহ ময়দান দিনাজপুর শহরের একটি ঐতিহাসিক স্থান, যা শহীদদের স্মৃতির উদ্দেশ্যে নির্মিত হয়েছে। এটি মূলত শহীদদের আত্মত্যাগের প্রতি শ্রদ্ধা নিবেদন করতে ব্যবহৃত হয় এবং এখানে প্রতি বছর ঈদুল ফিতর ও ঈদুল আযহার নামাজ অনুষ্ঠিত হয়। গোর-এ-শহীদ ময়দানটি স্থানীয় জনগণের জন্য এক গুরুত্বপূর্ণ ধর্মীয় ও সাংস্কৃতিক স্থান, যেখানে বৃহৎ সংখ্যক মুসল্লি ঈদের নামাজ আদায় করতে সমবেত হন। এটি শহরের কেন্দ্রস্থলে অবস্থিত এবং ঐতিহাসিক ও ধর্মীয় গুরুত্বের জন্য বেশ পরিচিত।',
       image: 'images/boromath.jpg',
       lat: 25.6218,
       lng: 88.6333,
@@ -107,9 +107,9 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     Place(
       id: 8,
-      name: 'Jibon Mohol',
+      name: 'জীবন মহল',
       description:
-      'Jibon Mohol, also known as the "Palace of Life," is a historical building located in Mymensingh, Bangladesh. It was built in the early 20th century by a wealthy landowner, and it stands as an architectural masterpiece reflecting the grandeur and luxury of that era. The building is famous for its intricate design and beautiful craftsmanship, with a blend of traditional and colonial architectural styles.',
+      'জীবন মহল দিনাজপুর শহরের একটি ঐতিহাসিক স্থান, যা ১৯শ শতকের মাঝামাঝি সময়ে নির্মিত হয়। এটি এক সময় রাজাদের আবাসস্থল হিসেবে ব্যবহৃত হত এবং মুঘল স্থাপত্যশৈলীতে তৈরি। জীবন মহলটি দিনাজপুর রাজবাড়ির অংশ ছিল এবং এর গঠনশৈলী, কাঠামো ও কারুকাজ আজও ইতিহাসপ্রেমী ও পর্যটকদের আকর্ষণ করে। বর্তমানে এটি একটি ঐতিহ্যবাহী স্থাপনা হিসেবে সংরক্ষিত রয়েছে এবং স্থানীয় জনগণের জন্য একটি গুরুত্বপূর্ণ সাংস্কৃতিক স্থল।',
       image: 'images/jibonmahal.png',
       lat: 25.6319,
       lng: 88.6133,
@@ -118,9 +118,9 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     Place(
       id: 9,
-      name: 'The Grand Dadu Bari Park & Resort',
+      name: 'দাদু বাড়ি',
       description:
-      'The Grand Dadu Bari Park & Resort is a popular recreational destination in Mymensingh, Bangladesh. Set in a scenic location, it offers lush greenery, gardens, and various recreational activities like boating and picnicking. The resort provides comfortable accommodations and is ideal for family outings, events, and relaxation, making it a favorite spot for both locals and tourists.',
+      'দাদু বাড়ি দিনাজপুর জেলার একটি ঐতিহাসিক স্থান, যা শহরের অদূরে অবস্থিত। এটি একটি পুরনো বাংলো ধরনের বাড়ি, যা অতীতের ঐতিহ্য ও স্থাপত্যের নিদর্শন হিসেবে পরিচিত। দাদু বাড়ি মূলত একটি প্রাচীন বাড়ি, যেখানে আগে একসময় স্থানীয় রাজবংশের সদস্যরা বাস করতেন। এর সুন্দর ডিজাইন, পুরনো কাঠামো এবং নির্মাণ শৈলী আজও মানুষের মনোযোগ আকর্ষণ করে। বর্তমানে এটি স্থানীয় সংস্কৃতি ও ইতিহাসের অংশ হিসেবে সংরক্ষিত এবং প্রাচীন স্থাপত্যশৈলীর এক উজ্জ্বল উদাহরণ হিসেবে পরিচিত।',
       image: 'images/daduBari.jpg',
       lat: 25.7166,
       lng: 88.6544,
@@ -129,9 +129,9 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     Place(
       id: 10,
-      name: 'Singra National Park',
+      name: 'সিংড়া জাতীয় উদ্যান',
       description:
-      'Singra National Park is a beautiful and biodiverse wildlife sanctuary located in the northern part of Bangladesh. Known for its rich flora and fauna, the park is a haven for nature lovers and wildlife enthusiasts. It is home to a variety of species, including tigers, deer, and numerous bird species. The park also features dense forests, rivers, and wetlands, making it a picturesque and tranquil escape for visitors. Singra National Park plays an important role in the conservation of Bangladesh natural heritage and is a popular spot for eco-tourism.',
+      'সিংড়া জাতীয় উদ্যান বাংলাদেশের নাটোর জেলার সিংড়া উপজেলায় অবস্থিত একটি সুন্দর প্রাকৃতিক উদ্যান। এটি ২০১৪ সালে জাতীয় উদ্যান হিসেবে ঘোষণা করা হয়। সিংড়া উদ্যানটি মূলত বিভিন্ন প্রজাতির বন্যপ্রাণী, পাখি এবং গাছপালায় সমৃদ্ধ, যা প্রকৃতিপ্রেমী ও বন্যপ্রাণী অনুসন্ধানকারীদের জন্য একটি জনপ্রিয় স্থান। এখানে নানান প্রজাতির মাছ, সাপ, স্তন্যপায়ী প্রাণী ও বন্য পাখি দেখা যায়। এটি পরিবেশের সংরক্ষণ ও শিক্ষা কার্যক্রমের জন্য গুরুত্বপূর্ণ ভূমিকা পালন করে এবং দেশের জীববৈচিত্র্য রক্ষায় সহায়ক।',
       image: 'images/singraNationalPark.jpg',
       lat: 25.8895,
       lng: 88.5638,
@@ -140,9 +140,9 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     Place(
       id: 11,
-      name: 'Dinajpur Zero Point',
+      name: 'দিনাজপুর জিরো পয়েন্ট',
       description:
-      'Dinajpur Zero Point is a prominent landmark located in Dinajpur, a district in northern Bangladesh. It serves as a major intersection and entry point to the city, connecting several roads and highways. The area is known for its bustling atmosphere, with a variety of shops, restaurants, and businesses in the vicinity. It is a key commercial and transportation hub in Dinajpur, often visited by both locals and travelers. Zero Point also holds cultural significance as a meeting place for people, and its often considered a starting point for exploring the city and nearby attractions.',
+      'দিনাজপুর জিরো পয়েন্ট বাংলাদেশের দিনাজপুর জেলার বিরল উপজেলায় অবস্থিত একটি গুরুত্বপূর্ণ স্থান। এটি মূলত বিরল উপজেলা শহরের কেন্দ্রস্থলে অবস্থিত এবং স্থানীয় রাস্তা ও পরিবহন নেটওয়ার্কের প্রাথমিক পয়েন্ট হিসেবে ব্যবহৃত হয়। দিনাজপুর জিরো পয়েন্ট থেকে বিভিন্ন সড়ক শুরু হয়, যা শহরের বিভিন্ন অংশে যোগাযোগ স্থাপন করে। এটি স্থানীয় জনগণের জন্য একটি পরিচিত ও গুরুত্বপূর্ণ স্থাপনা, যেখানে প্রায়ই যানবাহন ও লোকজনের সমাগম ঘটে।',
       image: 'images/zeroPoint.jpg',
       lat: 25.6207,
       lng: 88.6344,
@@ -151,9 +151,9 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     Place(
       id: 12,
-      name: 'Sitakot Vihara',
+      name: 'সীতাকোট বিহার',
       description:
-      'Sitakot Vihara is a historic Buddhist archaeological site located in the Dinajpur district of northern Bangladesh. It is believed to date back to the Pala period (8th–12th century AD), making it an important site for Buddhist heritage. The vihara (monastery) is situated near the banks of the river Atrai and was once a thriving center for Buddhist learning and meditation. Excavations at the site have revealed various ruins, including terracotta plaques, sculptures, and inscriptions, which offer insight into the religious and cultural practices of the time. Sitakot Vihara holds significance for both history enthusiasts and those interested in exploring ancient Buddhist art and architecture.',
+      'সীতাকোট বিহার দিনাজপুর জেলার নবাবগঞ্জ উপজেলায় অবস্থিত একটি প্রাচীন বৌদ্ধ বিহার। এটি পঞ্চম বা ষষ্ঠ শতকের তৈরি, যা ১৯৬৭ সালে খনন করা হয়। বিহারটি প্রায় বর্গাকৃতির, ৪১টি কক্ষে বিভক্ত, এবং প্রতিটি কক্ষে পেছনে কুলুঙ্গি ছিল। দক্ষিণ দিকে প্রধান মন্দির এবং সম্মুখে স্তম্ভশোভিত প্যাভিলিয়ন ছিল। এতে শৌচাগারের জন্য পাঁচটি কক্ষও পাওয়া যায়। সীতাকোট বিহারের স্থাপত্য শালবন বিহার ও পাহাড়পুর বিহারের সাথে কিছুটা সাদৃশ্য রয়েছে।',
       image: 'images/sitaKot.jpg',
       lat: 25.2451,
       lng: 88.0306,
@@ -162,9 +162,9 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     Place(
       id: 13,
-      name: 'Barapukuria Coal Mine',
+      name: 'বড়পুকুরিয়া কয়লাখনি',
       description:
-      'Barapukuria Coal Mine is a significant coal mining project located in the Dinajpur district of northern Bangladesh. It is the only active coal mine in the country, and it plays a crucial role in supplying coal for power generation. The mine, which operates at a depth of around 120 to 200 meters, has an estimated coal reserve of over 300 million tons. The coal extracted from Barapukuria is primarily used in the Barapukuria Thermal Power Plant to generate electricity, contributing to Bangladesh energy sector.',
+      'বড়পুকুরিয়া কয়লাখনি বাংলাদেশের একমাত্র বাস্তবায়িত কয়লা খনি। এটি দিনাজপুরের পার্বতীপুরে অবস্থিত। এটি আবিষ্কৃত হয় ১৯৮৫ সালে। এর আয়তন ৬.৬৮ বর্গ কিলোমিটার।[১] এই অঞ্চলে কয়লা মজুদের পরিমাণ ৩৯০ মিলিয়ন মেট্রিক টন। এখানে বিটুমিনাস কয়লা পাওয়া যায়। বড়পুকুরিয়া কয়লা খনির প্রকল্প ব্যয় ২৫১.০৮ মিলিয়ন মার্কিন ডলার।[২] এর থেকে প্রাপ্ত কয়লা দিয়ে বড়পুকুরিয়া তাপবিদ্যুৎ কেন্দ্রে বিদ্যুৎ উৎপাদন করা হয়।',
       image: 'images/koilaKhoni.webp',
       lat: 25.6365,
       lng: 88.6363,
@@ -173,9 +173,9 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     Place(
       id: 14,
-      name: 'Ashurar Bil',
+      name: 'আশুরার বিল',
       description:
-      'Ashurar Bil is a natural water body located in the Dinajpur district of Bangladesh. It is a large pond, known for its scenic beauty and serene surroundings, making it a popular spot for both locals and tourists. The area around Ashurar Bil is surrounded by lush greenery, which enhances its tranquil and peaceful atmosphere. It is a place often visited for relaxation, bird watching, and enjoying nature.',
+      'আশুরার বিল দিনাজপুর জেলার নবাবগঞ্জ উপজেলার শালবনের উত্তর পাশে অবস্থিত একটি বিশাল বিল, যার আয়তন ২৫১.৭৮ হেক্টর। এই বিলের চারপাশ থেকে ৮০টি দার বা নালা ছড়িয়ে রয়েছে, যার কারণে এর নামকরণ করা হয় "আশুরার বিল"। এ বিলের মাঝে বিভিন্ন স্থান যেমন পাতিলদহ, বুড়িদহ, পীরদহ, মুনির আইল, কাজলাদহ, পালাদহ, মুনির থান ইত্যাদি নামে পরিচিত। এক সময় এখানে প্রচুর মাছ পাওয়া যেত, বিশেষত বোয়াল ও পাবদা মাছ। এছাড়া টেংরা, কই, মাগুর, পুটি, চিংড়ি, শোল, গজাড়, বাইম ইত্যাদি মাছও পাওয়া যেত। বর্ষাকালে শাপলা ফুল বিলের সৌন্দর্যকে বাড়িয়ে দেয়।বিলের চারপাশে স্থানীয় কৃষকরা বোরো ধান চাষ করে এবং ভালো ফলন পায়। আশুরার বিল মস্যজীবি সমবায় সমিতি লি: ২০১৩ সাল থেকে বিলটির ব্যবস্থাপনা করছে। মস্য অধিদপ্তরের অনুমতি নিয়ে প্রতি দুই বছর পর পর রাক্ষুসে প্রজাতির মাছ ধরা হয়, যাতে বাকি অংশে মাছ বড় হতে এবং প্রজনন করতে পারে। বর্তমানে বিলটি ভরাট হওয়ায় মাছ ধরার সুযোগ কমে গেছে।',
       image: 'images/ashurarBil.webp',
       lat: 25.6365,
       lng: 88.6363,
@@ -185,9 +185,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
     Place(
       id: 15,
-      name: 'Kuril Bil',
+      name: 'কড়াই বিল',
       description:
-      'Kuril Bil is a large water body located in the Dinajpur district of Bangladesh. It is known for its scenic beauty and peaceful environment, offering a natural escape for visitors. The pond is surrounded by lush greenery, making it a popular spot for locals who enjoy the serene surroundings and tranquil waters.Kuril Bil is also an important resource for the local community, providing water for agriculture and supporting a variety of wildlife. Its calm and scenic landscape makes it a great place for relaxation, fishing, and enjoying the natural beauty of the area. The area around the pond is often used for walking, picnics, and other recreational activities, contributing to its reputation as a peaceful retreat in the region.',
+      'কড়াই বিল দিনাজপুর জেলার বিরল উপজেলার একটি জনপ্রিয় পর্যটন স্থান, যা বিরল উপজেলা শহর থেকে মাত্র ১ কিলোমিটার দূরে অবস্থিত। এ বিলের আয়তন ২৮ একর এবং পাড়ের পরিমাণ ১৮ একর। কড়াই বিলের চারপাশে কৃত্রিম হ্রদ, উদ্যান ও বিভিন্ন গাছগাছালি রয়েছে। শীতকালে এটি বিদেশি পাখিতে ভরে যায়। ১৯৭৪ সালে তৎকালীন সরকার কড়াই বিলটি মুক্তিযোদ্ধাদের রেজিস্ট্রি করে দেয়, এবং তারা বিরল থানা মুক্তিযোদ্ধা সমবায় সমিতি গঠন করে এখানে একটি পর্যটন প্রকল্প তৈরি করে। এটি ডিসেম্বর-জানুয়ারি মাসে দর্শনার্থীদের জন্য বিশেষ আকর্ষণ হয়ে থাকে।',
       image: 'images/kurilbul.jpg',
       lat: 25.6365,
       lng: 88.6363,
@@ -230,7 +230,7 @@ class _HomeScreenState extends State<HomeScreen> {
           color: isDark ? Colors.black : Colors.black, // Text color black in both themes
         ),
         decoration: InputDecoration(
-          hintText: 'Search Places...',
+          hintText: 'স্থান অনুসন্ধান করুন....',
           hintStyle: TextStyle(
             color: isDark ? Colors.white70 : Colors.black54, // Hint text color for dark mode
           ),
@@ -257,7 +257,7 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.transparent,
         elevation: 4,
         title: Text(
-          'Dinajpur Tourism',
+          'দিনাজপুর অ্যাডভেঞ্চার',
           style: AppStyles.appBarTitleStyle,
         ),
         centerTitle: true,
@@ -304,39 +304,43 @@ class _HomeScreenState extends State<HomeScreen> {
       padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
       child: Column(
         children: [
-          CarouselSlider(
-            items: _places.map((place) {
-              return Builder(
-                builder: (BuildContext context) {
-                  return Container(
-                    margin: AppStyles.carouselPadding,
-                    child: ClipRRect(
-                      borderRadius: AppStyles.defaultBorderRadius,
-                      child: Image.asset(
-                        place.image,
-                        width: double.infinity,
-                        height: AppStyles.carouselHeight,
-                        fit: BoxFit.cover,
+          Container(
+            height: 231,
+            width: double.infinity,
+            child: CarouselSlider(
+              items: _places.map((place) {
+                return Builder(
+                  builder: (BuildContext context) {
+                    return Container(
+                      margin: AppStyles.carouselPadding,
+                      child: ClipRRect(
+                        borderRadius: AppStyles.defaultBorderRadius,
+                        child: Image.asset(
+                          place.image,
+                          width: double.infinity,
+                          height: AppStyles.carouselHeight,
+                          fit: BoxFit.cover,
+                        ),
                       ),
-                    ),
-                  );
+                    );
+                  },
+                );
+              }).toList(),
+              options: CarouselOptions(
+                height: AppStyles.carouselHeight,
+                autoPlay: true,
+                autoPlayInterval: Duration(seconds: 4),
+                autoPlayAnimationDuration: Duration(milliseconds: 900),
+                autoPlayCurve: Curves.easeInOut,
+                enlargeCenterPage: true,
+                aspectRatio: 16 / 9,
+                viewportFraction: AppStyles.carouselViewportFraction,
+                onPageChanged: (index, reason) {
+                  setState(() {
+                    _currentIndex = index;
+                  });
                 },
-              );
-            }).toList(),
-            options: CarouselOptions(
-              height: AppStyles.carouselHeight,
-              autoPlay: true,
-              autoPlayInterval: Duration(seconds: 4),
-              autoPlayAnimationDuration: Duration(milliseconds: 900),
-              autoPlayCurve: Curves.easeInOut,
-              enlargeCenterPage: true,
-              aspectRatio: 16 / 9,
-              viewportFraction: AppStyles.carouselViewportFraction,
-              onPageChanged: (index, reason) {
-                setState(() {
-                  _currentIndex = index;
-                });
-              },
+              ),
             ),
           ),
           SizedBox(height: 10),
@@ -557,7 +561,7 @@ class _PlaceCardState extends State<PlaceCard> {
                                 ),
                                 SizedBox(width: 8),
                                 Text(
-                                  'Dinajpur, Bangladesh',
+                                  'দিনাজপুর, বাংলাদেশ',
                                   style: GoogleFonts.poppins(
                                     fontSize: 12,
                                     color: isDark
@@ -584,7 +588,7 @@ class _PlaceCardState extends State<PlaceCard> {
                                       ),
                                       SizedBox(width: 6),
                                       Text(
-                                        'Explore',
+                                        'এক্সপ্লোর করুন',
                                         style: GoogleFonts.poppins(
                                           color: AppStyles.accentColor,
                                           fontSize: 12,

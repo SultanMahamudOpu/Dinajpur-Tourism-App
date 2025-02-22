@@ -37,7 +37,7 @@ class DetailScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 4,
         title: Text(
-          'Place Details',
+          'স্থান বিবরন',
           style: AppStyles.appBarTitleStyle,
         ),
         centerTitle: true,
@@ -116,7 +116,7 @@ class DetailScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "About this Place",
+                            "স্থানটির পরিচিতি",
                             style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
@@ -151,7 +151,7 @@ class DetailScreen extends StatelessWidget {
                     ),
                     child: ListTile(
                       leading: Icon(Icons.local_police, color: Colors.blue),
-                      title: Text('Police Station'),
+                      title: Text('পুলিশ স্টেশন'),
                       subtitle: Text(place.policePhone),
                       trailing: IconButton(
                         icon: Icon(Icons.call, color: Colors.green),
@@ -168,7 +168,7 @@ class DetailScreen extends StatelessWidget {
                     ),
                     child: ListTile(
                       leading: Icon(Icons.local_fire_department, color: Colors.red),
-                      title: Text('Fire Service'),
+                      title: Text('ফায়ার সার্ভিস'),
                       subtitle: Text(place.fireServicePhone),
                       trailing: IconButton(
                         icon: Icon(Icons.call, color: Colors.green),
@@ -180,10 +180,11 @@ class DetailScreen extends StatelessWidget {
                   // Modern styled button to open map.
                   ElevatedButton.icon(
                     onPressed: _openMap,
-                    icon: Icon(Icons.map),
-                    label: Text('View on Map'),
+                    icon: Icon(Icons.map_rounded,color: Colors.white,),
+                    label: Text('ম্যাপে অবস্থান জানুন'),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppStyles.accentColor,
+                      foregroundColor: Colors.white,
                       minimumSize: Size(double.infinity, 50),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
